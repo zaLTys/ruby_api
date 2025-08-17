@@ -14,7 +14,7 @@ class WikiPostsController < ApplicationController
 
   # GET /wiki_posts/1 or /wiki_posts/1.json
   def show
-    binding.debugger
+    # binding.debugger
     log_info("WikiPost viewed: #{@wiki_post.title}")
   end
 
