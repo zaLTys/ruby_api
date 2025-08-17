@@ -15,6 +15,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :wiki_posts, only: [:index]
     end
+    namespace :v2 do
+      resources :wiki_posts, only: [:index]
+    end
   end
 
   get '/about', to: redirect('/welcome/about')
